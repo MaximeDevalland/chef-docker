@@ -5,7 +5,7 @@ include_recipe "apt::default"
 
 apt_repository "docker" do
   uri "https://get.docker.com/ubuntu"
-  distribution docker
+  distribution "docker"
   components ["main"]
   keyserver "keyserver.ubuntu.com"
   key "36A1D7869245C8950F966E92D8576A8BA88D21E9"
